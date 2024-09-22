@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Manual</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .manuals {
+            padding: 40px;
+            margin-top: -60px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .manuals h2 {
+            color: #343a40;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .manuals p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .manual-card img {
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto; /* Centering the image horizontally */
+        }
+        .manual-card img:hover {
+            transform: scale(2.05);
+        }
+        /* Enhanced List Group Styles */
+        .list-group-item {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            border: 1px solid #6a11cb;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .list-group-item i {
+            color: #6a11cb;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        .list-group-item:hover {
+            background-color: #6a11cb;
+            color: white;
+            transform: translateY(-5px);
+        }
+        .list-group-item:hover i {
+            color: white;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="./ApplicationLogo.png" alt="Hospital Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Admin Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nurseManual.html">Nurse Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/patientManual.html">Patient Manual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/trainingManual.html">Training Manual</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Admin User Manual</h1>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Patient List</h2>
+            <p>The Patient List section allows you to view and manage all registered patients within the system. You can easily search for patients by name or ID, access their overview details, and edit or progress their care plans.</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./AdminPhoto/PatientList.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-search"></i><strong>Search patients by name/ID:</strong> Quickly find a specific patient by entering their name or ID in the search bar. This feature helps healthcare professionals retrieve patient information efficiently.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-list"></i><strong>Patients Overview:</strong> View a comprehensive list of all registered patients. Access each patient’s profile containing essential information like medical history and contact details.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user-circle"></i><strong>Patient Profiles:</strong> View and edit detailed patient information to ensure that records are accurate and up-to-date, enabling personalized care.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row manual-card mt-5">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./AdminPhoto/PatientList2.png" alt="Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-edit"></i><strong>Edit:</strong> Modify patient information such as contact details or medical history, ensuring that records reflect changes in conditions or treatment plans.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-chart-line"></i><strong>Progress:</strong> Track patient progress through their care plan and update status or notes to reflect changes in their condition.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="manuals container">
+            <h2>Add New Patient</h2>
+            <p>The Add New User section allows you to add new patient and do all the registion process through the appliction.</p>
+
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./AdminPhoto/AddNewUser.png" alt="Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> First Name: </strong> Enter the user's first name for identification and communication.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Middle Name: </strong> Provide the user's middle name to differentiate between similar names.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-user"></i><strong> Last Name: </strong> Enter the user's last name for formal identification and record-keeping.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Date of Birth: </strong> Input the user's date of birth for age verification and demographic purposes.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-id-card"></i><strong> Medicare Number: </strong> Include the user's Medicare number for health insurance and medical records.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-id-badge"></i><strong> Western Affairs Number: </strong> Add the Western Affairs number if applicable for administrative purposes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="manuals container">
+            <h2>Nurse Roster</h2>
+            <p>The Nurse Roster section allows you to manage nurse tasks and track the progress of the nurse through the application.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center order-md-2">
+                    <img src="./AdminPhoto/NurseRoster.png" alt="Image 3" class="img-fluid">
+                </div>
+                
+                <div class="col-md-6 d-flex flex-column justify-content-center order-md-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-calendar-alt"></i><strong> Managing Nurse Rosters: </strong> This feature allows administrators to create and manage nurse schedules, ensuring proper staffing for each shift.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-tasks"></i><strong> Viewing Nurse Progress: </strong> Track the progress of assigned tasks, monitor nurse performance, and ensure quality care for patients through real-time updates.
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-cogs"></i><strong> Additional Features: </strong> Access advanced functionalities like shift swapping, leave management, and automated notifications to streamline nurse operations.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="manuals container">
+            <h2>Troubleshooting</h2>
+            <p>Having trouble with the system? Check out our troubleshooting guide below to resolve common issues.</p>
+        
+            <div class="row manual-card">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="./AdminPhoto/PasswordForgot.png" alt="Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Login Issues: </strong>
+                            <p> Ensure you have the correct username and password. If you forget your password, use the "Forgot Password" link.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> User Management Errors: </strong>
+                            <p> Check for correct user details and roles.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Activity Data Not Loading: </strong>
+                            <p> Refresh the page or check your internet connection.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-question-circle"></i><strong> Device Compatibility: </strong>
+                            <p> Verify that the device used to track activity is compatible with the system and properly paired.</p>
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="manuals container">
+            <h2>Support Contacts</h2>
+            <p>For further assistance, contact the support team:</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fas fa-envelope"></i> Email: <a href="mailto:suppor   t@guardianmonitor.com">support@guardianmonitor.com</a>
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-phone"></i> Phone: +1-800-123-4567
+                </li>
+                <li class="list-group-item">
+                    <i class="fas fa-comment"></i> Live Chat: Available on the website.
+                </li>
+            </ul>
+        </section>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Guardian Monitor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
