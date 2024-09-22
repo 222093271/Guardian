@@ -1,4 +1,5 @@
 **Guardian Monitor User Manual**
+
 This is a simple webpage for the Guardian Monitor system, showcasing various manuals for different user types.
 
 Features
